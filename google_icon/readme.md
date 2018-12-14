@@ -1,0 +1,1 @@
+使用原生js/jquery以及vue各自实现了google搜索框下的快捷方式组件  
