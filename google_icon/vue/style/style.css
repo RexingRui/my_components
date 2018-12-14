@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+.icon-container {
+	position: relative;
+	top: 150px;
+	left: 150px;
+	width: 112px;
+	height: 112px;
+	padding: 2px;
+}
+.icon-container:hover {
+	background: #f5eeee;
+}
+.icon-inner {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+}
+.icon-shape {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 52px;
+	height: 52px;
+	background: #e9e3e3;
+	border-radius: 50%;
+}
+.icon-image {
+	height: 28px;
+	width: 28px;
+}
+.icons {
+	width: 100%;
+}
+
+.icon-title {
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+.icon-btn {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 22px;
+	height: 24px;
+	padding: 0;
+	border: none;
+	background: rgba(255, 255, 255, 0); 
+	cursor: pointer;
+}
+
+.icon-btn-img {
+	width: 100%;
+}
+
+.overlay {
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.7)
+}
+
+.pop {
+	z-index: 100;
+	position: fixed;
+	margin: auto;
+	padding: 20px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 216px;
+	width: 320px;
+	background: #ffffff;
+	border: 1px solid #d3cdcd;
+	border-radius: 10px;
+}
+
+.pop-title {
+	margin-bottom: 20px;
+}
+.pop-input {
+	margin-bottom: 10px;
+	position: relative;
+}
+.web-input {
+	background: rgb(241, 243, 244);
+	border: none;
+	padding: 8px;
+	-webkit-appearance: none;
+	outline: none;
+}
+.web-label {
+	font-size: 13px;
+}
+
+.pop-btn-container {
+	position: relative;
+	margin-top: 30px;
+}
+.pop-btn {
+	padding: 8px 20px;
+	color: #0000ff;
+	position: absolute;
+	border-radius: 4px;
+	background: #ffffff;
+	border: 1px solid rgb(211, 205, 205);
+}
+.pop-btn-cancel {
+	right: 80px;
+}
+.pop-btn-complete {
+	right: 0;
+	color: #ffffff;
+	background: rgb(26, 115, 232);
+}
+
+/* 输入框动画 */
+.input-animation {
+	position: absolute;
+	right: 68px;
+	width: 180px;
+	height: 2px;
+	background: rgb(26, 115, 232);
+	opacity: 0;
+	
+}
+
+.input-animation.active {
+	opacity: 1;
+	transform: scaleX(1.8);
+	transition: transform .3s ease-out;
+}
+
+/* vue 动画 */
+.fade-enter-active,
+.fade-leave-active {
+	transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to {
+	opacity: 0;
+}
